@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SRParams>
+    <SRVersion>SenseSR_T_MTK_V3.0.1.1591_M1.61_x689b_Optimized</SRVersion>
+
+    <!-- Kamera Utama (ID 0) - Kondisi Terang / Daylight (ISO 0 - 400) -->
+    <ParamGroup MatchEuqalCamId="0" MatchMinScale="1.0" MatchMaxScale="2.0" MatchMaxIso="400">
+        <ParamSharpness EdgeAmount="1.12" LocalEdge="1.05" TextureAmount="1.25" DetailAmount="1.30" ContrastAmount="1.05" DarkAreaEdge="1.00"/>
+        <DetailYDnoise DnoiseAmount="0.75" TexturePreserve="1.35"/>
+        <UVDnoise DnoiseAmount="0.80"/>
+        <ModelOperationParams ModelWeight="1.0" BlendRatio="0.90"/>
+    </ParamGroup>
+
+    <!-- Kamera Utama (ID 0) - Kondisi Indoor / Remang (ISO 400 - 1200) -->
+    <ParamGroup MatchEuqalCamId="0" MatchMinScale="1.0" MatchMaxScale="3.0" MatchMaxIso="1200">
+        <ParamSharpness EdgeAmount="1.18" LocalEdge="1.10" TextureAmount="1.15" DetailAmount="1.18" ContrastAmount="1.05" DarkAreaEdge="1.05"/>
+        <DetailYDnoise DnoiseAmount="1.00" TexturePreserve="1.20"/>
+        <UVDnoise DnoiseAmount="1.05"/>
+        <ModelOperationParams ModelWeight="1.0" BlendRatio="0.85"/>
+    </ParamGroup>
+
+    <!-- Kamera Utama (ID 0) - Kondisi Malam / Low-Light (ISO 1200 - Inf) -->
+    <ParamGroup MatchEuqalCamId="0" MatchMinScale="1.0" MatchMaxScale="3.0" MatchMaxIso="Inf">
+        <ParamSharpness EdgeAmount="1.22" LocalEdge="1.15" TextureAmount="1.05" DetailAmount="1.05" ContrastAmount="1.00" DarkAreaEdge="1.10"/>
+        <DetailYDnoise DnoiseAmount="1.25" TexturePreserve="1.05"/>
+        <UVDnoise DnoiseAmount="1.30"/>
+        <ModelOperationParams ModelWeight="1.0" BlendRatio="0.80"/>
+    </ParamGroup>
+
+    <!-- Kamera Utama (ID 0) - Super Zoom Mode (Scale 3.0 - 10.0) -->
+    <ParamGroup MatchEuqalCamId="0" MatchMinScale="3.0" MatchMaxScale="10.0" MatchMaxIso="Inf">
+        <ParamSharpness EdgeAmount="1.28" LocalEdge="1.20" TextureAmount="1.12" DetailAmount="1.15" ContrastAmount="1.08" DarkAreaEdge="1.12"/>
+        <DetailYDnoise DnoiseAmount="1.10" TexturePreserve="1.15"/>
+        <UVDnoise DnoiseAmount="1.15"/>
+        <ModelOperationParams ModelWeight="1.0" BlendRatio="0.92"/>
+    </ParamGroup>
+
+    <!-- Kamera Sekunder / Ultrawide / Front (ID 1) - General Tuning -->
+    <ParamGroup MatchEuqalCamId="1" MatchMinScale="1.0" MatchMaxScale="5.0" MatchMaxIso="Inf">
+        <ParamSharpness EdgeAmount="1.15" LocalEdge="1.08" TextureAmount="1.15" DetailAmount="1.15" ContrastAmount="1.02" DarkAreaEdge="1.02"/>
+        <DetailYDnoise DnoiseAmount="0.90" TexturePreserve="1.10"/>
+        <UVDnoise DnoiseAmount="0.95"/>
+        <ModelOperationParams ModelWeight="1.0" BlendRatio="0.85"/>
+    </ParamGroup>
+</SRParams>
